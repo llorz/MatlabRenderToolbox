@@ -1,0 +1,6 @@
+%%
+
+%%
+S1 = MESH_IO.read_shape('./data/tr_reg_000.off');
+S2 = MESH_IO.read_shape('./data/tr_reg_001.off');
+T12 = 1:length(S1.surface.X);
