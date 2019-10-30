@@ -16,4 +16,4 @@ This is a simple render toolbox in Matlab.
 - This toolbox gives so-so renderings (as shown above), but it is very fast and easy to play with (I feel so :)
 - In this toolbox, I used some functions from [gptoolbox](https://github.com/alecjacobson/gptoolbox) by [Alec Jacobson](https://github.com/alecjacobson). This blog [Paper-worthy rendering in MATLAB](https://www.alecjacobson.com/weblog/?p=4732) by Alec might also be helpful.
 - If you are looking for paper-level rendering toolbox, I found [this one](https://github.com/HTDerekLiu/BlenderToolbox), a blender toolbox with python scripts provided by [Hsueh-Ti Derek Liu](https://github.com/HTDerekLiu) extremely helpful. 
-- Please feel free to contact me (jing.ren@kaust.edu.sa) if you have any questions or suggestions of this toolbox ;)
+- Please feel free to contact me (jing.ren@kaust.edu.sa) if you have any questions or suggestions to this toolbox ;)
