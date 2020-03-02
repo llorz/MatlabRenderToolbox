@@ -1,4 +1,4 @@
-function my_plywrite(filename,faces,verts,rgb)
+ function my_plywrite(filename,faces,verts,rgb)
 % plywrite(filename,faces,verts)
 % Will write a face vertex mesh data in ply format.
 % faces -> polygonal descriptions in terms of vertex indices
@@ -32,7 +32,7 @@ if nargin == 3
        'element face %u\n', ...
        'property list uint8 int32 vertex_indices\n', ...
        'end_header\n'], ...
-       length(verts),length(faces));
+       length(verts),size(faces,1));
 
    % Insert Colored Vertices
    for i=1:length(verts)
@@ -44,7 +44,7 @@ if nargin == 3
    end
 
    % Insert Faces
-   dlmwrite(filename,[size(faces,2)*ones(length(faces),1),faces-1],'-append','delimiter',' ','precision',10);
+   dlmwrite(filename,[size(faces,2)*ones(size(faces,1),1),faces-1],'-append','delimiter',' ','precision',10);
 
 % Colored Mesh
 elseif nargin == 4
@@ -66,7 +66,7 @@ elseif nargin == 4
        'element face %u\n', ...
        'property list uint8 int32 vertex_indices\n', ...
        'end_header\n'], ...
-       length(verts),length(faces));
+       length(verts),size(faces,1));
 
    % Insert Colored Vertices
    for i=1:length(verts)
@@ -82,6 +82,6 @@ elseif nargin == 4
    end
 
    % Insert Faces
-   dlmwrite(filename,[size(faces,2)*ones(length(faces),1),faces-1],'-append','delimiter',' ','precision',10);
+   dlmwrite(filename,[size(faces,2)*ones(size(faces,1),1),faces-1],'-append','delimiter',' ','precision',10);
 
 end
